@@ -17,9 +17,10 @@
 
 </head>
 
+
 <body <?php body_class(); ?>>
 
-    <header class="bg-cover" style="background-image: url('<?php echo IMG_PATH; ?>/header-bg.png');">
+    <header class="bg-cover header-desktop" style="background-image: url('<?php echo IMG_PATH; ?>/header-bg.png');">
 
         <div class="logo">
             <?php if (get_field('site_logo', 'option')): ?>
@@ -34,6 +35,12 @@
                     'container_class' => 'main-menu'
                 ));
             ?>
+        </div>
+
+        <div class="nav-toggle hamburger hamburger--collapse visible-xs visible-s visible-sm" id="nav-icon">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
         </div>
 
     </header>

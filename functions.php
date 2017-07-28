@@ -15,6 +15,7 @@ function genesis_sample_google_fonts() {
 
 	wp_enqueue_style( 'font', get_stylesheet_directory_uri() . '/assets/css/font.css', array(), CHILD_THEME_VERSION);
 	wp_enqueue_style( 'grid', get_stylesheet_directory_uri() . '/assets/css/grid.css', array(), CHILD_THEME_VERSION);
+	wp_enqueue_style( 'hamburger', get_stylesheet_directory_uri() . '/assets/css/hamburgers.min.css', array(), CHILD_THEME_VERSION);
 	wp_enqueue_style( 'main', get_stylesheet_directory_uri() . '/style.css', array(), CHILD_THEME_VERSION);
 
 	/* PhotoSwipe */
