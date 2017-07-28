@@ -23,9 +23,11 @@
     <header class="bg-cover header-desktop" style="background-image: url('<?php echo IMG_PATH; ?>/header-bg.png');">
 
         <div class="logo">
-            <?php if (get_field('site_logo', 'option')): ?>
-            <img src="<?php the_field('site_logo', 'option') ?>" alt="Lillias Trotter">
-            <?php endif; ?>
+            <a href="/">
+                <?php if (get_field('site_logo', 'option')): ?>
+                <img src="<?php the_field('site_logo', 'option') ?>" alt="Lillias Trotter">
+                <?php endif; ?>
+            </a>
         </div>
 
         <div class="site-menu">
