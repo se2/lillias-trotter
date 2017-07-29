@@ -39,8 +39,8 @@ add_theme_support( 'genesis-responsive-viewport' );
 //* Add support for custom background
 add_theme_support( 'custom-background' );
 
-//* Add support for 3-column footer widgets
-add_theme_support( 'genesis-footer-widgets', 3 );
+//* Add support for 4-column footer widgets
+add_theme_support( 'genesis-footer-widgets', 4 );
 
 //* ACF Option Page
 if( function_exists('acf_add_options_page') ) {
