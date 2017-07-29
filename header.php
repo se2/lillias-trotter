@@ -25,11 +25,15 @@
         <div class="logo">
             <a href="/">
                 <?php if (is_front_page()): ?>
-                <?php if (get_field('site_logo', 'option')): ?>
-                <img src="<?php the_field('site_logo', 'option') ?>" alt="Lillias Trotter">
-                <?php endif; ?>
+                    <?php if (get_field('site_logo', 'option')): ?>
+                    <img src="<?php the_field('site_logo', 'option'); ?>" alt="Lillias Trotter">
+                    <?php endif; ?>
                 <?php else: ?>
-                <img src="<?php the_field('subpage_logo') ?>" alt="Lillias Trotter" class="subpage-logo">
+                    <?php if (get_field('subpage_logo')): ?>
+                    <img src="<?php the_field('subpage_logo'); ?>" alt="Lillias Trotter" class="subpage-logo">
+                    <?php else: ?>
+                    <img src="<?php echo IMG_PATH; ?>/subpage-logo.png" alt="Lillias Trotter" class="subpage-logo">
+                    <?php endif; ?>
                 <?php endif; ?>
             </a>
         </div>
