@@ -24,8 +24,12 @@
 
         <div class="logo">
             <a href="/">
+                <?php if (is_front_page()): ?>
                 <?php if (get_field('site_logo', 'option')): ?>
                 <img src="<?php the_field('site_logo', 'option') ?>" alt="Lillias Trotter">
+                <?php endif; ?>
+                <?php else: ?>
+                <img src="<?php the_field('subpage_logo') ?>" alt="Lillias Trotter" class="subpage-logo">
                 <?php endif; ?>
             </a>
         </div>

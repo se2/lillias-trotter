@@ -1,3 +1,4 @@
+	<?php if (is_front_page()): ?>
 	<footer class="bg-cover footer" style="background-image: url('<?php echo IMG_PATH; ?>/footer-bg.png');">
 		<div class="footer-content">
 			<div class="grid-col s-11 sm-12 m-14 l-14 lg-14 col-1">
@@ -31,6 +32,31 @@
 			</div>
 		</div>
 	</footer>
+	<?php else: ?>
+	<footer class="bg-cover subpage-footer" style="background-image: url('<?php echo IMG_PATH; ?>/subpage-footer-bg.png');">
+		<div class="container">
+			<div class="social-footer">
+				<ul class="social-list">
+					<li class="social-item">
+						<a href="#">
+							<img src="<?php echo IMG_PATH; ?>/footer-email.png" alt="">
+						</a>
+					</li>
+					<li class="social-item">
+						<a href="#">
+							<img src="<?php echo IMG_PATH; ?>/footer-fb.png" alt="">
+						</a>
+					</li>
+					<li class="social-item">
+						<a href="#">
+							<img src="<?php echo IMG_PATH; ?>/footer-insta.png" alt="">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<?php endif; ?>
 
 	<?php wp_footer(); ?>
 
